@@ -31,6 +31,13 @@ module.exports = {
       maxWidth: {
         '2xl': '40rem',
       },
+      colors: {
+        myTeal: '#09c7d9',
+        myBlue: '#000052',
+        myBlue2: '#172359',
+        myBlue3: '#01003b',
+        myBlue4: '#00021d'
+      }
     },
   },
   plugins: [formsPlugin, headlessuiPlugin],
