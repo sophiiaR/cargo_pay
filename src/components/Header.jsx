@@ -4,6 +4,8 @@ import { Fragment } from 'react'
 import Link from 'next/link'
 import { Popover, Transition } from '@headlessui/react'
 import clsx from 'clsx'
+import logo from '../images/logos/logo.svg'
+import Image from 'next/image'
 
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
@@ -93,26 +95,30 @@ function MobileNavigation() {
 
 export function Header() {
   return (
-    <header className="py-10">
+    <header className="py-10 px-5">
       <Container>
         <nav className="relative z-50 flex justify-between">
           <div className="flex items-center md:gap-x-12">
-            <Link href="#" aria-label="Home">
-              <Logo className="h-10 w-auto" />
-            </Link>
-            <div className="hidden md:flex md:gap-x-6">
+            <Image
+                  width={100}
+                  height={100}
+                  className="h-12 w-auto items-center"
+                  src={logo}
+                  alt=""
+            />
+            <div className="hidden md:flex md:gap-x-6 items-center">
               <NavLink href="#features">Features</NavLink>
               <NavLink href="#testimonials">Testimonials</NavLink>
               <NavLink href="#pricing">Pricing</NavLink>
             </div>
           </div>
           <div className="flex items-center gap-x-5 md:gap-x-8">
-            <div className="hidden md:block">
+            {/* <div className="hidden md:block">
               <NavLink href="/login">Sign in</NavLink>
-            </div>
-            <Button href="/register" color="blue">
-              <span>
-                Get started <span className="hidden lg:inline">today</span>
+            </div> */}
+            <Button href="https://web.dev.taco.tecso.coop/sign-in" className='bg-myBlue px-8'>
+              <span className='text-base'>
+                Sign In
               </span>
             </Button>
             <div className="-mr-1 md:hidden">
