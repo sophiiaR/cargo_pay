@@ -12,7 +12,7 @@ import screenshotProfitLoss from '@/images/screenshots/profit-loss.png'
 
 const features = [
   {
-    name: 'Reporting',
+    name: 'Terminal Portuaria',
     summary: 'Stay on top of things with always up-to-date reporting features.',
     description:
       'We talked about reporting in the section above but we needed three items here, so mentioning it one more time for posterity.',
@@ -46,7 +46,7 @@ const features = [
     },
   },
   {
-    name: 'Inventory',
+    name: 'Entidad administrativa',
     summary:
       'Never lose track of what’s in stock with accurate inventory tracking.',
     description:
@@ -74,7 +74,7 @@ const features = [
     },
   },
   {
-    name: 'Contacts',
+    name: 'Representantes de logistica',
     summary:
       'Organize all of your contacts, service providers, and invoices in one place.',
     description:
@@ -101,13 +101,13 @@ const features = [
 function Feature({ feature, isActive, className, ...props }) {
   return (
     <div
-      className={clsx(className, !isActive && 'opacity-75 hover:opacity-100')}
-      {...props}
+      // className={clsx(className, !isActive && 'opacity-75 hover:opacity-100')}
+      // {...props}
     >
       <div
         className={clsx(
           'w-9 rounded-lg',
-          isActive ? 'bg-blue-600' : 'bg-slate-500',
+          'bg-myTeal'
         )}
       >
         <svg aria-hidden="true" className="h-9 w-9" fill="none">
@@ -116,13 +116,13 @@ function Feature({ feature, isActive, className, ...props }) {
       </div>
       <h3
         className={clsx(
-          'mt-6 text-sm font-medium',
-          isActive ? 'text-blue-600' : 'text-slate-600',
+          'mt-6 text-xl font-medium',
+          'text-myBlue4'
         )}
       >
         {feature.name}
       </h3>
-      <p className="mt-2 font-display text-xl text-slate-900">
+      <p className="mt-2 font-display text-base text-slate-900">
         {feature.summary}
       </p>
       <p className="mt-4 text-sm text-slate-600">{feature.description}</p>
@@ -138,14 +138,14 @@ function FeaturesMobile() {
           <Feature feature={feature} className="mx-auto max-w-2xl" isActive />
           <div className="relative mt-10 pb-10">
             <div className="absolute -inset-x-4 bottom-0 top-8 bg-slate-200 sm:-inset-x-6" />
-            <div className="relative mx-auto w-[52.75rem] overflow-hidden rounded-xl bg-white shadow-lg shadow-slate-900/5 ring-1 ring-slate-500/10">
+            {/* <div className="relative mx-auto w-[52.75rem] overflow-hidden rounded-xl bg-white shadow-lg shadow-slate-900/5 ring-1 ring-slate-500/10">
               <Image
                 className="w-full"
                 src={feature.image}
                 alt=""
                 sizes="52.75rem"
               />
-            </div>
+            </div> */}
           </div>
         </div>
       ))}
@@ -155,10 +155,10 @@ function FeaturesMobile() {
 
 function FeaturesDesktop() {
   return (
-    <Tab.Group as="div" className="hidden lg:mt-20 lg:block">
+    <Tab.Group as="div" className="hidden lg:mt-20 lg:block px-8">
       {({ selectedIndex }) => (
         <>
-          <Tab.List className="grid grid-cols-3 gap-x-8">
+          <Tab.List className="grid grid-cols-3 gap-x-10">
             {features.map((feature, featureIndex) => (
               <Feature
                 key={feature.summary}
@@ -176,7 +176,7 @@ function FeaturesDesktop() {
               />
             ))}
           </Tab.List>
-          <Tab.Panels className="relative mt-20 overflow-hidden rounded-4xl bg-slate-200 px-14 py-16 xl:px-16">
+          {/* <Tab.Panels className="relative mt-20 overflow-hidden rounded-4xl bg-slate-200 px-14 py-16 xl:px-16">
             <div className="-mx-5 flex">
               {features.map((feature, featureIndex) => (
                 <Tab.Panel
@@ -201,7 +201,7 @@ function FeaturesDesktop() {
               ))}
             </div>
             <div className="pointer-events-none absolute inset-0 rounded-4xl ring-1 ring-inset ring-slate-900/10" />
-          </Tab.Panels>
+          </Tab.Panels> */}
         </>
       )}
     </Tab.Group>
@@ -213,10 +213,10 @@ export function SecondaryFeatures() {
     <section
       id="secondary-features"
       aria-label="Features for simplifying everyday business tasks"
-      className="pb-14 pt-20 sm:pb-20 sm:pt-32 lg:pb-32"
+      className="pb-14 pt-5 sm:pb-20 sm:pt-5 lg:pb-32 lg:mx-5"
     >
       <Container>
-        <div className="mx-auto max-w-2xl md:text-center">
+        {/* <div className="mx-auto max-w-2xl md:text-center">
           <h2 className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl">
             Simplify everyday business tasks.
           </h2>
@@ -224,7 +224,7 @@ export function SecondaryFeatures() {
             Because you’d probably be a little confused if we suggested you
             complicate your everyday business tasks instead.
           </p>
-        </div>
+        </div> */}
         <FeaturesMobile />
         <FeaturesDesktop />
       </Container>
