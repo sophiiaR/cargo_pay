@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import bgImage from '../images/screenshots/img_1.png'
 
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
@@ -11,8 +12,9 @@ import logoTuple from '@/images/logos/tuple.svg'
 
 export function Hero() {
   return (
-    <Container className="pb-16 pt-20 text-center lg:pt-32">
-      <h1 className="mx-auto max-w-4xl font-display text-5xl font-medium tracking-tight text-slate-900 sm:text-7xl">
+    <Container className="pb-16 pt-6 text-center lg:pt-8">
+      <Image height={800} width={2100} src={bgImage} objectFit='contain' alt='bgImg' />
+      {/* <h1 className="mx-auto max-w-4xl font-display text-5xl font-medium tracking-tight text-slate-900 sm:text-7xl">
         Accounting{' '}
         <span className="relative whitespace-nowrap text-blue-600">
           <svg
@@ -80,7 +82,7 @@ export function Hero() {
             </li>
           ))}
         </ul>
-      </div>
+      </div> */}
     </Container>
   )
 }
