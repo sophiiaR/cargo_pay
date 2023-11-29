@@ -116,7 +116,7 @@ export function Header() {
             {/* <div className="hidden md:block">
               <NavLink href="/login">Sign in</NavLink>
             </div> */}
-            <Button href="https://web.dev.taco.tecso.coop/sign-in" className='bg-myBlue px-8'>
+            <Button href="https://web.dev.taco.tecso.coop/sign-in" className='px-8'>
               <span className='text-base'>
                 Sign In
               </span>
