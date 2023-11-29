@@ -12,7 +12,8 @@ import logoTuple from '@/images/logos/tuple.svg'
 
 export function Hero() {
   return (
-    <Container className="pb-16 pt-6 text-center lg:pt-8">
+    <Container className="pb-16 text-center">
+      {/* pt-6 lg:pt-8 */}
       <Image height={800} width={2100} src={bgImage} objectFit='contain' alt='bgImg' />
       {/* <h1 className="mx-auto max-w-4xl font-display text-5xl font-medium tracking-tight text-slate-900 sm:text-7xl">
         Accounting{' '}
