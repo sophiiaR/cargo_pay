@@ -15,6 +15,8 @@ const variantStyles = {
     blue: 'bg-blue-600 text-white hover:text-slate-100 hover:bg-blue-500 active:bg-blue-800 active:text-blue-100 focus-visible:outline-blue-600',
     white:
       'bg-white text-slate-900 hover:bg-blue-50 active:bg-blue-200 active:text-slate-600 focus-visible:outline-white',
+    myBlue: 
+      'bg-myBlue4 text-white hover:bg-myBlue hover:text-slate-100 active:bg-myBlue4 active:text-slate-300 focus-visible:outline-myBlue4'
   },
   outline: {
     slate:
@@ -26,7 +28,7 @@ const variantStyles = {
 
 export function Button({ className, ...props }) {
   props.variant ??= 'solid'
-  props.color ??= 'slate'
+  props.color ??= 'myBlue'
 
   className = clsx(
     baseStyles[props.variant],
