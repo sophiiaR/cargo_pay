@@ -216,7 +216,7 @@ export function SecondaryFeatures() {
       className="pb-14 pt-5 sm:pb-20 sm:pt-5 lg:pb-32 lg:mx-5"
     >
       <Container>
-        {/* <div className="mx-auto max-w-2xl md:text-center">
+        <div className="mx-auto max-w-2xl md:text-center">
           <h2 className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl">
             Simplify everyday business tasks.
           </h2>
@@ -224,7 +224,7 @@ export function SecondaryFeatures() {
             Because you’d probably be a little confused if we suggested you
             complicate your everyday business tasks instead.
           </p>
-        </div> */}
+        </div>
         <FeaturesMobile />
         <FeaturesDesktop />
       </Container>
