@@ -7,7 +7,8 @@ import { NavLink } from '@/components/NavLink'
 
 export function Footer() {
   return (
-    <footer className="bg-slate-50 mt-16 px-5">
+    <footer className="bg-slate-50 pt-12 px-5">
+      {/* mt-16 */}
       <Container>
         <div className="pt-10 pb-5">
           {/* <Logo className="mx-auto h-10 w-auto" /> */}
