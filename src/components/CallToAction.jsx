@@ -9,7 +9,7 @@ export function CallToAction() {
   return (
     <section
       id="get-started-today"
-      className="relative overflow-hidden bg-myBlue4 py-32 mt-10 bg-gradient-to-tr from-[#09c7d9] to-[#00021d]"
+      className="relative overflow-hidden bg-myBlue4 py-32 mt-72 bg-gradient-to-tr from-[#09c7d9] to-[#00021d]"
     >
       {/* <Image
         className="absolute left-1/2 top-1/2 max-w-none -translate-x-1/2 -translate-y-1/2"
