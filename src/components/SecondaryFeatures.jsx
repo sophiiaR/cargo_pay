@@ -13,15 +13,15 @@ import screenshotProfitLoss from '@/images/screenshots/profit-loss.png'
 const features = [
   {
     name: 'Terminal Portuaria',
-    summary: 'Stay on top of things with always up-to-date reporting features.',
+    summary: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio.',
     description:
-      'We talked about reporting in the section above but we needed three items here, so mentioning it one more time for posterity.',
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi sapiente inventore maiores nobis asperiores voluptatem, exercitationem.',
     image: screenshotProfitLoss,
     icon: function ReportingIcon() {
       let id = useId()
       return (
         <>
-          <defs>
+          {/* <defs>
             <linearGradient
               id={id}
               x1="11.5"
@@ -35,11 +35,17 @@ const features = [
             </linearGradient>
           </defs>
           <path
-            d="m30 15-4 5-4-11-4 18-4-11-4 7-4-5"
+            // d="m30 15-4 5-4-11-4 18-4-11-4 7-4-5"
+            d="M4.5 2.25a.75.75 0 000 1.5v16.5h-.75a.75.75 0 000 1.5h16.5a.75.75 0 000-1.5h-.75V3.75a.75.75 0 000-1.5h-15zM9 6a.75.75 0 000 1.5h1.5a.75.75 0 000-1.5H9zm-.75 3.75A.75.75 0 019 9h1.5a.75.75 0 010 1.5H9a.75.75 0 01-.75-.75zM9 12a.75.75 0 000 1.5h1.5a.75.75 0 000-1.5H9zm3.75-5.25A.75.75 0 0113.5 6H15a.75.75 0 010 1.5h-1.5a.75.75 0 01-.75-.75zM13.5 9a.75.75 0 000 1.5H15A.75.75 0 0015 9h-1.5zm-.75 3.75a.75.75 0 01.75-.75H15a.75.75 0 010 1.5h-1.5a.75.75 0 01-.75-.75zM9 19.5v-2.25a.75.75 0 01.75-.75h4.5a.75.75 0 01.75.75v2.25a.75.75 0 01-.75.75h-4.5A.75.75 0 019 19.5z"
             stroke={`url(#${id})`}
             strokeWidth={2}
             strokeLinecap="round"
             strokeLinejoin="round"
+          /> */}
+          <path
+            fill-rule="evenodd"
+            d="M4.5 2.25a.75.75 0 000 1.5v16.5h-.75a.75.75 0 000 1.5h16.5a.75.75 0 000-1.5h-.75V3.75a.75.75 0 000-1.5h-15zM9 6a.75.75 0 000 1.5h1.5a.75.75 0 000-1.5H9zm-.75 3.75A.75.75 0 019 9h1.5a.75.75 0 010 1.5H9a.75.75 0 01-.75-.75zM9 12a.75.75 0 000 1.5h1.5a.75.75 0 000-1.5H9zm3.75-5.25A.75.75 0 0113.5 6H15a.75.75 0 010 1.5h-1.5a.75.75 0 01-.75-.75zM13.5 9a.75.75 0 000 1.5H15A.75.75 0 0015 9h-1.5zm-.75 3.75a.75.75 0 01.75-.75H15a.75.75 0 010 1.5h-1.5a.75.75 0 01-.75-.75zM9 19.5v-2.25a.75.75 0 01.75-.75h4.5a.75.75 0 01.75.75v2.25a.75.75 0 01-.75.75h-4.5A.75.75 0 019 19.5z"
+            fill="#fff"
           />
         </>
       )
@@ -48,26 +54,16 @@ const features = [
   {
     name: 'Entidad administrativa',
     summary:
-      'Never lose track of what’s in stock with accurate inventory tracking.',
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, soluta voluptatibus.',
     description:
-      'We don’t offer this as part of our software but that statement is inarguably true. Accurate inventory tracking would help you for sure.',
-    image: screenshotInventory,
+      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni ipsam dolor autem tempora excepturi libero soluta voluptas porro eum unde!',
+      image: screenshotInventory,
     icon: function InventoryIcon() {
       return (
         <>
           <path
-            opacity=".5"
-            d="M8 17a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2Z"
-            fill="#fff"
-          />
-          <path
-            opacity=".3"
-            d="M8 24a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2Z"
-            fill="#fff"
-          />
-          <path
-            d="M8 10a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2Z"
-            fill="#fff"
+              d="M2.25 5.25a3 3 0 013-3h13.5a3 3 0 013 3V15a3 3 0 01-3 3h-3v.257c0 .597.237 1.17.659 1.591l.621.622a.75.75 0 01-.53 1.28h-9a.75.75 0 01-.53-1.28l.621-.622a2.25 2.25 0 00.659-1.59V18h-3a3 3 0 01-3-3V5.25zm1.5 0v7.5a1.5 1.5 0 001.5 1.5h13.5a1.5 1.5 0 001.5-1.5v-7.5a1.5 1.5 0 00-1.5-1.5H5.25a1.5 1.5 0 00-1.5 1.5z"
+              fill="#fff"
           />
         </>
       )
@@ -76,20 +72,24 @@ const features = [
   {
     name: 'Representantes de logistica',
     summary:
-      'Organize all of your contacts, service providers, and invoices in one place.',
+      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, praesentium.',
     description:
-      'This also isn’t actually a feature, it’s just some friendly advice. We definitely recommend that you do this, you’ll feel really organized and professional.',
+      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas veritatis at ipsam aperiam dicta ut itaque repudiandae unde deserunt nulla dolorem amet.',
+      
     image: screenshotContacts,
     icon: function ContactsIcon() {
       return (
         <>
           <path
-            opacity=".5"
-            d="M25.778 25.778c.39.39 1.027.393 1.384-.028A11.952 11.952 0 0 0 30 18c0-6.627-5.373-12-12-12S6 11.373 6 18c0 2.954 1.067 5.659 2.838 7.75.357.421.993.419 1.384.028.39-.39.386-1.02.036-1.448A9.959 9.959 0 0 1 8 18c0-5.523 4.477-10 10-10s10 4.477 10 10a9.959 9.959 0 0 1-2.258 6.33c-.35.427-.354 1.058.036 1.448Z"
+            // opacity=".5"
+            fill-rule="evenodd"
+            // d="M25.778 25.778c.39.39 1.027.393 1.384-.028A11.952 11.952 0 0 0 30 18c0-6.627-5.373-12-12-12S6 11.373 6 18c0 2.954 1.067 5.659 2.838 7.75.357.421.993.419 1.384.028.39-.39.386-1.02.036-1.448A9.959 9.959 0 0 1 8 18c0-5.523 4.477-10 10-10s10 4.477 10 10a9.959 9.959 0 0 1-2.258 6.33c-.35.427-.354 1.058.036 1.448Z"
+            d="M7.5 5.25a3 3 0 013-3h3a3 3 0 013 3v.205c.933.085 1.857.197 2.774.334 1.454.218 2.476 1.483 2.476 2.917v3.033c0 1.211-.734 2.352-1.936 2.752A24.726 24.726 0 0112 15.75c-2.73 0-5.357-.442-7.814-1.259-1.202-.4-1.936-1.541-1.936-2.752V8.706c0-1.434 1.022-2.7 2.476-2.917A48.814 48.814 0 017.5 5.455V5.25zm7.5 0v.09a49.488 49.488 0 00-6 0v-.09a1.5 1.5 0 011.5-1.5h3a1.5 1.5 0 011.5 1.5zm-3 8.25a.75.75 0 100-1.5.75.75 0 000 1.5z"
             fill="#fff"
           />
           <path
-            d="M12 28.395V28a6 6 0 0 1 12 0v.395A11.945 11.945 0 0 1 18 30c-2.186 0-4.235-.584-6-1.605ZM21 16.5c0-1.933-.5-3.5-3-3.5s-3 1.567-3 3.5 1.343 3.5 3 3.5 3-1.567 3-3.5Z"
+            // d="M12 28.395V28a6 6 0 0 1 12 0v.395A11.945 11.945 0 0 1 18 30c-2.186 0-4.235-.584-6-1.605ZM21 16.5c0-1.933-.5-3.5-3-3.5s-3 1.567-3 3.5 1.343 3.5 3 3.5 3-1.567 3-3.5Z"
+            d="M3 18.4v-2.796a4.3 4.3 0 00.713.31A26.226 26.226 0 0012 17.25c2.892 0 5.68-.468 8.287-1.335.252-.084.49-.189.713-.311V18.4c0 1.452-1.047 2.728-2.523 2.923-2.12.282-4.282.427-6.477.427a49.19 49.19 0 01-6.477-.427C4.047 21.128 3 19.852 3 18.4z"
             fill="#fff"
           />
         </>
@@ -110,7 +110,7 @@ function Feature({ feature, isActive, className, ...props }) {
           'bg-myTeal'
         )}
       >
-        <svg aria-hidden="true" className="h-9 w-9" fill="none">
+        <svg aria-hidden="true" className="h-9 w-9 pl-1.5 pt-1.5" fill="none">
           <feature.icon />
         </svg>
       </div>
@@ -213,16 +213,19 @@ export function SecondaryFeatures() {
     <section
       id="secondary-features"
       aria-label="Features for simplifying everyday business tasks"
-      className="pb-14 pt-5 sm:pb-20 sm:pt-5 lg:pb-32 lg:mx-5"
+      className="pb-14 pt-5 sm:pb-20 sm:pt-5 lg:pb-32 lg:mx-5 mt-72"
     >
       <Container>
         <div className="mx-auto max-w-2xl md:text-center">
           <h2 className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl">
-            Simplify everyday business tasks.
+            {/* Simplify everyday business tasks. */}
+            Lorem ipsum dolor sit amet.
           </h2>
           <p className="mt-4 text-lg tracking-tight text-slate-700">
-            Because you’d probably be a little confused if we suggested you
-            complicate your everyday business tasks instead.
+            {/* Because you’d probably be a little confused if we suggested you */}
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis.
+            {/* complicate your everyday business tasks instead. */}
+            Lorem ipsum dolor sit amet consectetur adipisicing.
           </p>
         </div>
         <FeaturesMobile />
