@@ -16,19 +16,22 @@ const features = [
   {
     title: 'Terminal portuaria',
     description:
-      "Keep track of everyone's salaries and whether or not they've been paid. Direct deposit not supported.",
+      //"Keep track of everyone's salaries and whether or not they've been paid. Direct deposit not supported.",
+      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, repudiandae. Ipsa temporibus quis nostrum.',
     image: screenshotPayroll,
   },
   {
     title: 'Entidad administrativa',
     description:
-      "All of your receipts organized into one place, as long as you don't mind typing in the data by hand.",
+      //"All of your receipts organized into one place, as long as you don't mind typing in the data by hand.",
+      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio rem itaque dolorem optio illo voluptatum aut.',
     image: screenshotExpenses,
   },
   {
     title: 'Representantes de logistica',
     description:
-      "We only sell our software to companies who don't deal with VAT at all, so technically we do all the VAT stuff they need.",
+      //"We only sell our software to companies who don't deal with VAT at all, so technically we do all the VAT stuff they need.",
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt autem eius harum ea voluptas repellat ipsa fugiat neque.',
     image: screenshotVatReturns,
   },
   // {
