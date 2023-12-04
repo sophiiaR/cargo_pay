@@ -17,7 +17,7 @@ export function Hero() {
       <div>
         <Image height={800} width={2100} src={bgImage} objectFit='contain' alt='bgImg' />
       </div>
-      <div className='relative -mt-[550px] -ml-[300px]'>
+      <div className='relative -mt-[550px] -ml-[400px]'>
         <h1 className="mx-auto max-w-4xl font-display text-5xl font-medium tracking-tight text-myBlue4/80 sm:text-7xl">
           {/* Accounting{' '} */}
           Lorem ipsum{' '}
